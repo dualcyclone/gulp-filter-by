@@ -1,7 +1,7 @@
 {
   "name": "gulp-filter-by",
   "description": "A gulp plugin to filter a files by using a function defined directly to work with the file itself",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/dualcyclone/gulp-filter-by",
   "repository": "git://github.com/dualcyclone/gulp-filter-by.git",
   "author": "Luke Dyson (http://www.flyinganvil.co.uk/)",
