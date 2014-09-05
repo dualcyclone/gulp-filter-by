@@ -19,10 +19,10 @@ Will filter files based on the boolean return value of the provided `fn` functio
 
 #### fn
 
-The required `fn` function is executed by the `filterBy` plugin, and it is passed the `file` from the stream
-to be processed by `fn`; it is then up to the developer of the task to decide whether the file should be
-included into the stream by performing any desired computations they please, the only requirement is that the
-function returned a boolean value to the plugin, so that it knows how to process the file:
+The required `fn` function is executed by the `filterBy` plugin, and it is passed the `file` from the stream; 
+it is then up to the developer of the task to decide whether the `file` should be included into the stream by 
+performing any desired computations; the only requirement is that the function returns a boolean value to the 
+plugin, so that it knows how to process the `file`:
  
 - returning `true` will include the file into the stream.
 - returning `false` will exclude the file from the stream.
