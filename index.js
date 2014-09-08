@@ -5,8 +5,8 @@ var PluginError = gutil.PluginError;
 const PLUGIN_NAME = 'gulp-filter-by';
 
 function filterBy(fn) {
-  if (!fn) {
-    throw new PluginError(PLUGIN_NAME, 'Missing filter function!');
+  if (!fn && typeof fn !== 'function') {
+    throw new PluginError(PLUGIN_NAME, 'The filter function has either not been provided, or is not a valid function');
   }
 
   // creating a stream through which each file will pass
