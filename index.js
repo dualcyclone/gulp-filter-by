@@ -6,15 +6,11 @@ const PLUGIN_NAME = 'gulp-filter-by';
 
 function filterBy(fn) {
   if (!fn && typeof fn !== 'function') {
-    throw new PluginError(PLUGIN_NAME, 'The filter function has either not been provided, or is not a valid function');
+    throw new PluginError(PLUGIN_NAME, '`fn` must be a function');
   }
 
   // creating a stream through which each file will pass
   var stream = through.obj(function(file, enc, cb) {
-    if (file.isStream()) {
-      this.emit('error', new PluginError(PLUGIN_NAME, 'Streams are not supported!'));
-      return cb();
-    }
 
     // Run the filter, which will return either true or false
     if(fn(file)) {
