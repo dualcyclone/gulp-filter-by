@@ -1,23 +1,39 @@
 {
   "name": "gulp-filter-by",
   "description": "A gulp plugin to filter a files by using a function defined directly to work with the file itself",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "homepage": "https://github.com/dualcyclone/gulp-filter-by",
   "repository": "git://github.com/dualcyclone/gulp-filter-by.git",
-  "author": "Luke Dyson (http://www.flyinganvil.co.uk/)",
-  "main": "./index.js",
+  "author": {
+    "name": "Luke Dyson",
+    "email": "npm@flyinganvil.co.uk",
+    "url": "http://www.flyinganvil.co.uk/"
+  },
+  "engines": {
+    "node": ">= 0.10.28"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "index.js"
+  ],
   "keywords": [
     "gulpplugin",
     "filter",
-    "gulp-filter"
+    "gulp-filter",
+    "match",
+    "ignore",
+    "include"
   ],
   "dependencies": {
     "gulp": "^3.8.7",
     "through2": "^0.6.1",
     "gulp-util": "^3.0.1"
   },
-  "devDependencies": {},
-  "engines": {
-    "node": ">= 0.10.28"
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "mocha": "^1.21.4",
+    "sinon": "^1.10.3"
   }
 }
