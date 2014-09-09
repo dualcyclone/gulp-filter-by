@@ -1,11 +1,11 @@
-var through = require('through2');
-var gutil = require('gulp-util');
-var PluginError = gutil.PluginError;
+var through = require('through2'),
+    gutil = require('gulp-util'),
+    PluginError = gutil.PluginError;
 
 const PLUGIN_NAME = 'gulp-filter-by';
 
 function filterBy(fn) {
-  if (!fn && typeof fn !== 'function') {
+  if (!fn || typeof fn !== 'function') {
     throw new PluginError(PLUGIN_NAME, '`fn` must be a function');
   }
 
