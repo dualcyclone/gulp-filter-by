@@ -26,3 +26,8 @@ plugin, so that it knows how to process the `file`:
  
 - returning `true` will include the file into the stream.
 - returning `false` will exclude the file from the stream.
+
+# Note
+
+If attempting to run the tests in Windows, use:
+- `istanbul cover node_modules/mocha/bin/_mocha`
