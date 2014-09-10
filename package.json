@@ -1,7 +1,7 @@
 {
   "name": "gulp-filter-by",
   "description": "Filter files by checking the file itself",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "homepage": "https://github.com/dualcyclone/gulp-filter-by",
   "repository": "git://github.com/dualcyclone/gulp-filter-by.git",
   "author": {
